@@ -1,0 +1,23 @@
+{
+    "name": "oyucekaya/transsmart",
+    "description": "PHP library for transsmart webservices",
+    "type": "library",
+    "require": {
+        "php": "^7.0",
+        "ext-soap": "*",
+        "container-interop/container-interop": "^1.2"
+    },
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Osman Yucekaya",
+            "email": "osman@rorix.nl"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Transsmart\\": "src/"
+        }
+    }
+}

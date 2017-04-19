@@ -1,0 +1,17 @@
+<?php
+return [
+    'transsmart' => [
+        'credentials' => [
+            'userId' => '',
+            'password' => '',
+            'customerId' => '',
+        ],
+        'soapParameters' => [
+            //The url for the WSDL
+            'url' => '',
+            //The url for authentication for type SoapHeader
+            'authUrl' => '',
+            'trace' => true,
+        ],
+    ],
+];

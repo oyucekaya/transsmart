@@ -34,6 +34,8 @@ class Shipment
     /** @var  string */
     private $serviceLevelTime;
     /** @var  string */
+    private $serviceLevelOther;
+    /** @var  string */
     private $incoterms;
     /** @var  int */
     private $inbound;
@@ -436,6 +438,22 @@ class Shipment
         $this->addresses = $addresses;
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getServiceLevelOther(): string
+    {
+        return $this->serviceLevelOther;
+    }
+
+    /**
+     * @param string $serviceLevelOther
+     */
+    public function setServiceLevelOther(string $serviceLevelOther)
+    {
+        $this->serviceLevelOther = $serviceLevelOther;
     }
 
 

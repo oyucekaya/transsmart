@@ -11,6 +11,7 @@ class Address
     private $zipCode;
     private $countryCode;
     private $contact;
+    private $accountNo;
     private $residential = '';
 
     /**
@@ -187,6 +188,22 @@ class Address
     public function setZipCode($zipCode)
     {
         $this->zipCode = $zipCode;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAccountNo()
+    {
+        return $this->accountNo;
+    }
+
+    /**
+     * @param mixed $accountNo
+     */
+    public function setAccountNo($accountNo)
+    {
+        $this->accountNo = $accountNo;
     }
 
 

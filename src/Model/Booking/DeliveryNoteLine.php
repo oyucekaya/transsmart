@@ -4,6 +4,8 @@ namespace Transsmart\Model\Booking;
 
 class DeliveryNoteLine
 {
+    /** @var  float */
+    private $price;
     /** @var  string */
     private $deliveryNoteId;
     /** @var  string */
@@ -423,5 +425,19 @@ class DeliveryNoteLine
         return $this;
     }
 
+    /**
+     * @return float
+     */
+    public function getPrice(): float
+    {
+        return $this->price;
+    }
 
+    /**
+     * @param float $price
+     */
+    public function setPrice(float $price)
+    {
+        $this->price = $price;
+    }
 }

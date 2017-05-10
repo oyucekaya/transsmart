@@ -15,6 +15,8 @@ class Shipment
     ///** @var Measurement */
     //private $measurements;
 
+    /** @var  float */
+    private $value;
     /** @var  string */
     private $valueCurrency;
     /** @var  string */
@@ -456,5 +458,19 @@ class Shipment
         $this->serviceLevelOther = $serviceLevelOther;
     }
 
+    /**
+     * @return float
+     */
+    public function getValue(): float
+    {
+        return $this->value;
+    }
 
+    /**
+     * @param float $value
+     */
+    public function setValue(float $value)
+    {
+        $this->value = $value;
+    }
 }

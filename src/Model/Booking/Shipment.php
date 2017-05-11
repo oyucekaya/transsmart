@@ -44,6 +44,9 @@ class Shipment
     /** @var  int */
     private $noOfPackages;
 
+    /** @var array additionalReferences */
+    private $additionalReferences = [];
+
     /** @var array shipmentLines */
     private $shipmentLines = [];
 
@@ -55,6 +58,11 @@ class Shipment
     {
         $this->measurements = $measurements;
         $this->addresses = $addresses;
+    }
+
+    public function addAdditionalReferences(AdditionalReference $additionalReference)
+    {
+        $this->additionalReferences[] = $additionalReference;
     }
 
     public function addShipmentLine(ShipmentLine $shipmentLine)

@@ -9,9 +9,15 @@ class Address
     private $city;
     private $houseNo;
     private $zipCode;
+    private $state;
     private $countryCode;
     private $contact;
+    private $telNo;
+    private $faxNo;
+    private $email;
     private $accountNo;
+    private $customerNo;
+    private $VATNumber;
     private $residential = '';
 
     /**
@@ -204,6 +210,102 @@ class Address
     public function setAccountNo($accountNo)
     {
         $this->accountNo = $accountNo;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getVATNumber()
+    {
+        return $this->VATNumber;
+    }
+
+    /**
+     * @param mixed $VATNumber
+     */
+    public function setVATNumber($VATNumber)
+    {
+        $this->VATNumber = $VATNumber;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCustomerNo()
+    {
+        return $this->customerNo;
+    }
+
+    /**
+     * @param mixed $customerNo
+     */
+    public function setCustomerNo($customerNo)
+    {
+        $this->customerNo = $customerNo;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param mixed $email
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFaxNo()
+    {
+        return $this->faxNo;
+    }
+
+    /**
+     * @param mixed $faxNo
+     */
+    public function setFaxNo($faxNo)
+    {
+        $this->faxNo = $faxNo;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTelNo()
+    {
+        return $this->telNo;
+    }
+
+    /**
+     * @param mixed $telNo
+     */
+    public function setTelNo($telNo)
+    {
+        $this->telNo = $telNo;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getState()
+    {
+        return $this->state;
+    }
+
+    /**
+     * @param mixed $state
+     */
+    public function setState($state)
+    {
+        $this->state = $state;
     }
 
 

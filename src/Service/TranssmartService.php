@@ -41,6 +41,12 @@ class TranssmartService
         return $this->soapClient->getStatus($status);
     }
 
+    public function doDelete(RequestBody $requestBody)
+    {
+        $delete = $this->toArray($requestBody);
+        return $this->soapClient->doDelete($delete);
+    }
+
     private function toArray($class)
     {
         $array = [];

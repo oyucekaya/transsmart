@@ -7,7 +7,7 @@ use Transsmart\Model\Booking\Booking;
 use Transsmart\Model\Booking\BookingInfo;
 use Transsmart\Model\Booking\DeliveryNote;
 use Transsmart\Model\Booking\Shipment;
-use Transsmart\Model\Document\Document;
+use Transsmart\Model\RequestBody;
 
 class TranssmartService
 {
@@ -29,10 +29,16 @@ class TranssmartService
         return $this->soapClient->doBooking($bookingInfo);
     }
 
-    public function getDocs(Document $document)
+    public function getDocs(RequestBody $requestBody)
     {
-        $document = $this->toArray($document);
+        $document = $this->toArray($requestBody);
         return $this->soapClient->getDocs($document);
+    }
+
+    public function getStatus(RequestBody $requestBody)
+    {
+        $status = $this->toArray($requestBody);
+        return $this->soapClient->getStatus($status);
     }
 
     private function toArray($class)

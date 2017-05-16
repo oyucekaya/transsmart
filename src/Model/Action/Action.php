@@ -1,5 +1,5 @@
 <?php
-namespace Transsmart\Model\Document;
+namespace Transsmart\Model\Action;
 
 class Action
 {

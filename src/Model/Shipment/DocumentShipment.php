@@ -1,33 +1,20 @@
 <?php
-namespace Transsmart\Model\Document;
+/**
+ * Created by PhpStorm.
+ * User: Osman
+ * Date: 16-5-2017
+ * Time: 13:35
+ */
 
-class Shipment
+namespace Transsmart\Model\Shipment;
+
+
+class DocumentShipment extends Shipment
 {
-    private $reference;
     private $colloId;
     private $awb;
     private $printerType = 'LABEL';
     private $printerName = 'Default';
-
-    /**
-     * @return mixed
-     */
-    public function getReference()
-    {
-        return $this->reference;
-    }
-
-    /**
-     * @param mixed $reference
-     *
-     * @return Shipment
-     */
-    public function setReference($reference)
-    {
-        $this->reference = $reference;
-
-        return $this;
-    }
 
     /**
      * @return mixed
@@ -39,14 +26,10 @@ class Shipment
 
     /**
      * @param mixed $colloId
-     *
-     * @return Shipment
      */
     public function setColloId($colloId)
     {
         $this->colloId = $colloId;
-
-        return $this;
     }
 
     /**
@@ -59,14 +42,10 @@ class Shipment
 
     /**
      * @param mixed $awb
-     *
-     * @return Shipment
      */
     public function setAwb($awb)
     {
         $this->awb = $awb;
-
-        return $this;
     }
 
     /**
@@ -79,14 +58,10 @@ class Shipment
 
     /**
      * @param string $printerType
-     *
-     * @return Shipment
      */
-    public function setPrinterType(string $printerType): Shipment
+    public function setPrinterType(string $printerType)
     {
         $this->printerType = $printerType;
-
-        return $this;
     }
 
     /**
@@ -99,16 +74,9 @@ class Shipment
 
     /**
      * @param string $printerName
-     *
-     * @return Shipment
      */
-    public function setPrinterName(string $printerName): Shipment
+    public function setPrinterName(string $printerName)
     {
         $this->printerName = $printerName;
-
-        return $this;
     }
-
-
-
 }

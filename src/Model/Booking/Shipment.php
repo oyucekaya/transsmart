@@ -10,6 +10,8 @@ class Shipment
     /** @var  string */
     private $trackingUrl = '';
     /** @var  string */
+    private $instruction = '';
+    /** @var  string */
     private $description = '';
 
     ///** @var Measurement */
@@ -480,5 +482,21 @@ class Shipment
     public function setValue(float $value)
     {
         $this->value = $value;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInstruction(): string
+    {
+        return $this->instruction;
+    }
+
+    /**
+     * @param string $instruction
+     */
+    public function setInstruction(string $instruction)
+    {
+        $this->instruction = $instruction;
     }
 }

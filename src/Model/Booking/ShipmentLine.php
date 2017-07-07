@@ -6,6 +6,9 @@ class ShipmentLine
     /** @var  int */
     private $lineNo;
     /** @var  int */
+    private $shipmentLineId;
+
+    /** @var  int */
     private $awb = '';
 
     /** @var  string */
@@ -253,6 +256,22 @@ class ShipmentLine
         $this->deliveryNoteInfo = $deliveryNoteInfo;
 
         return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getShipmentLineId(): int
+    {
+        return $this->shipmentLineId;
+    }
+
+    /**
+     * @param int $shipmentLineId
+     */
+    public function setShipmentLineId(int $shipmentLineId)
+    {
+        $this->shipmentLineId = $shipmentLineId;
     }
 
 

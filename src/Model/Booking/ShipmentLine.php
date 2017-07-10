@@ -5,7 +5,7 @@ class ShipmentLine
 {
     /** @var  int */
     private $lineNo;
-    /** @var  int */
+    /** @var  string */
     private $shipmentLineId;
 
     /** @var  int */
@@ -259,17 +259,17 @@ class ShipmentLine
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getShipmentLineId(): int
+    public function getShipmentLineId(): string
     {
         return $this->shipmentLineId;
     }
 
     /**
-     * @param int $shipmentLineId
+     * @param string $shipmentLineId
      */
-    public function setShipmentLineId(int $shipmentLineId)
+    public function setShipmentLineId(string $shipmentLineId)
     {
         $this->shipmentLineId = $shipmentLineId;
     }

@@ -281,11 +281,11 @@ class Shipment
     }
 
     /**
-     * @param string $requestedDeliveryTime
+     * @param string $requestedDeliveryTime | null
      *
      * @return Shipment
      */
-    public function setRequestedDeliveryTime(string $requestedDeliveryTime): Shipment
+    public function setRequestedDeliveryTime($requestedDeliveryTime): Shipment
     {
         $this->requestedDeliveryTime = $requestedDeliveryTime;
 
@@ -301,11 +301,11 @@ class Shipment
     }
 
     /**
-     * @param string $requestedDeliveryTimeTo
+     * @param string $requestedDeliveryTimeTo | null
      *
      * @return Shipment
      */
-    public function setRequestedDeliveryTimeTo(string $requestedDeliveryTimeTo): Shipment
+    public function setRequestedDeliveryTimeTo($requestedDeliveryTimeTo): Shipment
     {
         $this->requestedDeliveryTimeTo = $requestedDeliveryTimeTo;
 

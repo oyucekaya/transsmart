@@ -3,6 +3,8 @@ namespace Transsmart\Model\Booking;
 
 class Booking
 {
+    /** @var string */
+    private $costcenter;
     /** @var  string */
     private $carrier;
     /** @var  string */
@@ -15,6 +17,22 @@ class Booking
     private $action;
     /** @var  string */
     private $version;
+
+    /**
+     * @return string
+     */
+    public function getCostcenter(): string
+    {
+        return $this->costcenter;
+    }
+
+    /**
+     * @param string $costcenter
+     */
+    public function setCostcenter(string $costcenter)
+    {
+        $this->costcenter = $costcenter;
+    }
 
     /**
      * @return string

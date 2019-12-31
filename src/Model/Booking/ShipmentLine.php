@@ -29,8 +29,8 @@ class ShipmentLine
     private $dangerousGoods = null;
     /** @var  int */
     private $dangerousGoodsGds = null;
-    /** @var  string */
-    private $deliveryNoteInfo = '';
+    /** @var  DeliveryNoteInfo */
+    private $deliveryNoteInfo;
 
 
     public function __construct(Measurement $measurement)
@@ -241,26 +241,6 @@ class ShipmentLine
     /**
      * @return string
      */
-    public function getDeliveryNoteInfo(): string
-    {
-        return $this->deliveryNoteInfo;
-    }
-
-    /**
-     * @param string $deliveryNoteInfo
-     *
-     * @return ShipmentLine
-     */
-    public function setDeliveryNoteInfo(string $deliveryNoteInfo): ShipmentLine
-    {
-        $this->deliveryNoteInfo = $deliveryNoteInfo;
-
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
     public function getShipmentLineId(): string
     {
         return $this->shipmentLineId;
@@ -272,6 +252,26 @@ class ShipmentLine
     public function setShipmentLineId(string $shipmentLineId)
     {
         $this->shipmentLineId = $shipmentLineId;
+    }
+
+    /**
+     * @return DeliveryNoteInfo
+     */
+    public function getDeliveryNoteInfo(): DeliveryNoteInfo
+    {
+        return $this->deliveryNoteInfo;
+    }
+
+    /**
+     * @param DeliveryNoteInfo $deliveryNoteInfo
+     *
+     * @return ShipmentLine
+     */
+    public function setDeliveryNoteInfo(DeliveryNoteInfo $deliveryNoteInfo): ShipmentLine
+    {
+        $this->deliveryNoteInfo = $deliveryNoteInfo;
+
+        return $this;
     }
 
 

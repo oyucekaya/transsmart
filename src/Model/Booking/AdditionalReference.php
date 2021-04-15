@@ -1,6 +1,6 @@
 <?php
-namespace Transsmart\Model\Booking;
 
+namespace Transsmart\Model\Booking;
 
 class AdditionalReference
 {

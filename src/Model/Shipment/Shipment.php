@@ -8,7 +8,6 @@
 
 namespace Transsmart\Model\Shipment;
 
-
 class Shipment
 {
     private $reference;

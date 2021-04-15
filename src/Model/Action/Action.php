@@ -1,4 +1,5 @@
 <?php
+
 namespace Transsmart\Model\Action;
 
 class Action
@@ -45,6 +46,4 @@ class Action
 
         return $this;
     }
-
-
 }

@@ -1,8 +1,8 @@
 <?php
+
 namespace Transsmart\Factory;
 
-use Interop\Container\ContainerInterface;
-use SoapClient;
+use Psr\Container\ContainerInterface;
 
 class TranssmartServiceFactory
 {

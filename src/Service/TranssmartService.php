@@ -1,4 +1,5 @@
 <?php
+
 namespace Transsmart\Service;
 
 use ReflectionClass;

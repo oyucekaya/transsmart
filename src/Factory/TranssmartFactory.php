@@ -1,4 +1,5 @@
 <?php
+
 namespace Transsmart\Factory;
 
 use SoapClient;

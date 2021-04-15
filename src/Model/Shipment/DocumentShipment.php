@@ -8,7 +8,6 @@
 
 namespace Transsmart\Model\Shipment;
 
-
 class DocumentShipment extends Shipment
 {
     private $colloId;

@@ -1,4 +1,5 @@
 <?php
+
 namespace Transsmart\Model\Booking;
 
 class Address
@@ -307,6 +308,4 @@ class Address
     {
         $this->state = $state;
     }
-
-
 }

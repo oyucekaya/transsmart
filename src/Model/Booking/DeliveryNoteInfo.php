@@ -1,4 +1,5 @@
 <?php
+
 namespace Transsmart\Model\Booking;
 
 class DeliveryNoteInfo

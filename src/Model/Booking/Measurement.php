@@ -1,4 +1,5 @@
 <?php
+
 namespace Transsmart\Model\Booking;
 
 class Measurement
@@ -135,5 +136,4 @@ class Measurement
 
         return $this;
     }
-
 }

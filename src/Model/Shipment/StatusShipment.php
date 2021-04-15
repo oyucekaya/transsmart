@@ -8,7 +8,6 @@
 
 namespace Transsmart\Model\Shipment;
 
-
 class StatusShipment
 {
     private $referenceType;

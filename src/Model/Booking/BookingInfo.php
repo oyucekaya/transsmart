@@ -1,4 +1,5 @@
 <?php
+
 namespace Transsmart\Model\Booking;
 
 class BookingInfo
@@ -76,5 +77,4 @@ class BookingInfo
 
         return $this;
     }
-
 }

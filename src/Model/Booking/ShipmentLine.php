@@ -1,4 +1,5 @@
 <?php
+
 namespace Transsmart\Model\Booking;
 
 class ShipmentLine
@@ -273,6 +274,4 @@ class ShipmentLine
 
         return $this;
     }
-
-
 }

@@ -6,6 +6,7 @@ For now four functions are implemented:
 - getDocs
 - getStatus
 - doDelete
+- getShipments
 
 To use a dependency injection container for the config you can use the class TranssmartServiceFactory.
 Otherwise you can directly feed the credentials trhough an array and use the TranssmartFactory.
@@ -16,6 +17,5 @@ Following functions will be added later:
 - getStatusHistory
 - getRates
 - setStatus
-- getShipments
 - doManifest
 

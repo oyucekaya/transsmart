@@ -4,7 +4,7 @@ namespace Transsmart\Model;
 use Transsmart\Model\Action\Action;
 use Transsmart\Model\Shipment\Shipment;
 
-class RequestBody
+class SingleShipmentRequestBody
 {
     private $shipmentInfo;
     private $actionInfo;

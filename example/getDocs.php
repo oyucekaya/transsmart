@@ -2,7 +2,7 @@
 
 use Transsmart\Factory\TranssmartFactory;
 use Transsmart\Model\Action\Action;
-use Transsmart\Model\RequestBody;
+use Transsmart\Model\SingleShipmentRequestBody;
 use Transsmart\Model\Shipment\Shipment;
 
 require_once __DIR__ . '/../vendor/autoload.php';
@@ -31,7 +31,7 @@ $transsmart = $transsmartFactory->getService($config);
 $shipment = new Shipment();
 $shipment->setReference('Test');
 $action = new Action();
-$document = new RequestBody($shipment, $action);
+$document = new SingleShipmentRequestBody($shipment, $action);
 
 
 $result = $transsmart->getDocs($document);

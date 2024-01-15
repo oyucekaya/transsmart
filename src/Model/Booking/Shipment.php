@@ -14,10 +14,6 @@ class Shipment
     private $instruction = '';
     /** @var  string */
     private $description = '';
-
-    ///** @var Measurement */
-    //private $measurements;
-
     /** @var  float */
     private $value;
     /** @var  string */
@@ -57,9 +53,8 @@ class Shipment
     private $addresses;
 
 
-    public function __construct(Addresses $addresses, $measurements = null)
+    public function __construct(Addresses $addresses)
     {
-        $this->measurements = $measurements;
         $this->addresses = $addresses;
     }
 
@@ -149,26 +144,6 @@ class Shipment
     public function setDescription(string $description): Shipment
     {
         $this->description = $description;
-
-        return $this;
-    }
-
-    /**
-     * @return Measurement
-     */
-    public function getMeasurements(): Measurement
-    {
-        return $this->measurements;
-    }
-
-    /**
-     * @param Measurement $measurements
-     *
-     * @return Shipment
-     */
-    public function setMeasurements(Measurement $measurements): Shipment
-    {
-        $this->measurements = $measurements;
 
         return $this;
     }
